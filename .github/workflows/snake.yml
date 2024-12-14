@@ -1,17 +1,9 @@
-name: Generate snake animation
-
-on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
-
-  workflow_dispatch:
-
-  push:name: Generate Snake Animation
+name: Generate Snake Animation
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * *" # Generiše svakog dana u ponoć
+    - cron: "0 0 * * *" # Pokreće se svakog dana u ponoć
 
 jobs:
   build:
@@ -20,14 +12,10 @@ jobs:
       - uses: actions/checkout@v2
       - uses: Platane/snk@v2
         with:
-          github_user_name: AleksandarMladenovic # Tvoje korisničko ime na GitHubu
+          github_user_name: aleksandarm03 # Tvoje korisničko ime na GitHubu
           outputs: dist/snake.svg
       - name: Push Snake
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: dist
-
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
