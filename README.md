@@ -1,6 +1,6 @@
 <h3 align="center">✨ About Me ✨</h3>
 <p align="center">
-    Hi, I’m <strong>Aleksandar Mladenović</strong>, a third-year Computer Science student at the Faculty of Science in Kragujevac, specializing in Software Engineering.  
+    Hi, I’m <strong>Aleksandar Mladenović</strong>, a fourth-year Computer Science student at the Faculty of Science in Kragujevac, specializing in Software Engineering.  
     I graduated from the Second Grammar School of Kragujevac, where I studied in a program focused on informatics and computing.
 </p>
 
